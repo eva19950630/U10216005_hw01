@@ -18,13 +18,13 @@ public class TestFunctions {
 		Functions func6 = new FunctionF(x);
 		Functions func7 = new FunctionG(x);
 		
-		System.out.println(func1.toString());
-		System.out.println(func2.toString());
-		System.out.println(func3.toString());
-		System.out.println(func4.toString());
-		System.out.println(func5.toString());
-		System.out.println(func6.toString());
-		System.out.println(func7.toString());
+		System.out.printf("%.2f", func1.toString());
+		System.out.printf("%.2f", func2.toString());
+		System.out.printf("%.2f", func3.toString());
+		System.out.printf("%.2f", func4.toString());
+		System.out.printf("%.2f", func5.toString());
+		System.out.printf("%.2f", func6.toString());
+		System.out.printf("%.2f", func7.toString());
 		
 	}
 
