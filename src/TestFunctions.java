@@ -11,73 +11,38 @@ public class TestFunctions {
 		System.out.print("Enter x: ");
 		double x = input.nextDouble();
 		
-		Functions func1 = new FunctionA(x);
-		Functions func2 = new FunctionB(x);
-		Functions func3 = new FunctionC(x);
-		Functions func4 = new FunctionD(x);
-		Functions func5 = new FunctionE(x);
-		Functions func6 = new FunctionF(x);
-		Functions func7 = new FunctionG(x);
+		FunctionA func1 = new FunctionA();
+		FunctionB func2 = new FunctionB();
+		FunctionC func3 = new FunctionC();
+		FunctionD func4 = new FunctionD();
+		FunctionE func5 = new FunctionE();
+		FunctionF func6 = new FunctionF();
+		FunctionG func7 = new FunctionG();
 		
-		System.out.println(func1.toString());
-		System.out.println(func2.toString());
-		System.out.println(func3.toString());
-		System.out.println(func4.toString());
-		System.out.println(func5.toString());
-		System.out.println(func6.toString());
-		System.out.println(func7.toString());
+		System.out.println("a. f(x) = " + func1.f(x));
+		System.out.println("b. f(x) = " + func2.f(x));
+		System.out.println("c. f(x) = " + func3.f(x));
+		System.out.println("d. f(x) = " + func4.f(x));
+		System.out.println("e. f(x) = " + func5.f(x));
+		System.out.println("f. f(x) = " + func6.f(x));
+		System.out.println("g. f(x) = " + func7.f(x));
 		
 	}
 
 }
 
 // Functions Class (parent class)
-class Functions {
+abstract class Functions {
 
-	protected double x;
-	
-	protected Functions() {
-	}
-	
-	protected Functions(double x) {
-		this.x = x;
-	}
-	
-	public double getX() {
-		return x;
-	}
-	
-	public void setX(double x) {
-		this.x = x;
-	}
-
-	@Override
-	public String toString() {
-		return "f(x) = " + getX();
-	}
+	abstract double f(double x);
 	
 }
 
 // FunctionA Class (subclass1)
 class FunctionA extends Functions {
 
-	public FunctionA() {
-	}
-	
-	public FunctionA(double x) {
-		this.x = x;
-	}
-	
-	public double getFunctionA() {
+	public double f(double x) {
 		return Math.pow(x,2);
-	}
-	
-	public void setFunctionA(double x) {
-		this.x = x;
-	}
-	
-	public String toString() {
-		return "a. f(x) = " + getFunctionA();
 	}
 	
 }
@@ -85,47 +50,17 @@ class FunctionA extends Functions {
 // FunctionB Class (subclass2)
 class FunctionB extends Functions {
 
-	public FunctionB() {
-	}
-	
-	public FunctionB(double x) {
-		this.x = x;
-	}
-	
-	public double getFunctionB() {
+	public double f(double x) {
 		return Math.sin(x);
 	}
-	
-	public void setFunctionB(double x) {
-		this.x = x;
-	}
-	
-	public String toString() {
-		return "b. f(x) = " + getFunctionB();
-	}
-	
+
 }
 
 // FunctionC Class (subclass3)
 class FunctionC extends Functions {
 
-	public FunctionC() {
-	}
-	
-	public FunctionC(double x) {
-		this.x = x;
-	}
-	
-	public double getFunctionC() {
+	public double f(double x) {
 		return Math.cos(x);
-	}
-	
-	public void setFunctionC(double x) {
-		this.x = x;
-	}
-	
-	public String toString() {
-		return "c. f(x) = " + getFunctionC();
 	}
 	
 }
@@ -133,95 +68,35 @@ class FunctionC extends Functions {
 // FunctionD Class (subclass4)
 class FunctionD extends Functions {
 
-	public FunctionD() {
-	}
-	
-	public FunctionD(double x) {
-		this.x = x;
-	}
-	
-	public double getFunctionD() {
+	public double f(double x) {
 		return Math.tan(x);
 	}
-	
-	public void setFunctionD(double x) {
-		this.x = x;
-	}
-	
-	public String toString() {
-		return "d. f(x) = " + getFunctionD();
-	}
-	
+
 }
 
 // FunctionE Class (subclass5)
 class FunctionE extends Functions {
 
-	public FunctionE() {
-	}
-	
-	public FunctionE(double x) {
-		this.x = x;
-	}
-	
-	public double getFunctionE() {
+	public double f(double x) {
 		return Math.cos(x) + 5 * Math.sin(x);
 	}
-	
-	public void setFunctionE(double x) {
-		this.x = x;
-	}
-	
-	public String toString() {
-		return "e. f(x) = " + getFunctionE();
-	}
-	
+
 }
 
 // FunctionF Class (subclass6)
 class FunctionF extends Functions {
 
-	public FunctionF() {
-	}
-	
-	public FunctionF(double x) {
-		this.x = x;
-	}
-	
-	public double getFunctionF() {
+	public double f(double x) {
 		return 5 * Math.cos(x) + Math.sin(x);
 	}
-	
-	public void setFunctionF(double x) {
-		this.x = x;
-	}
-	
-	public String toString() {
-		return "f. f(x) = " + getFunctionF();
-	}
-	
+
 }
 
 // FunctionG Class (subclass7)
 class FunctionG extends Functions {
 
-	public FunctionG() {
-	}
-	
-	public FunctionG(double x) {
-		this.x = x;
-	}
-	
-	public double getFunctionG() {
+	public double f(double x) {
 		return Math.log(x) + Math.pow(x,2);
-	}
-	
-	public void setFunctionG(double x) {
-		this.x = x;
-	}
-	
-	public String toString() {
-		return "g. f(x) = " + getFunctionG();
 	}
 	
 }
