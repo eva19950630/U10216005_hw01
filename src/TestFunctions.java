@@ -10,6 +10,10 @@ public class TestFunctions {
 		System.out.println("Enter x: ");
 		int x = input.nextInt();
 		
+		Functions func1 = new FunctionExample(x);
+		
+		System.out.println(func1.toString());
+		
 	}
 
 }
@@ -50,6 +54,13 @@ abstract class Functions {
 
 class FunctionExample extends Functions {
 
+	public FunctionExample() {
+	}
+	
+	public FunctionExample(int x) {
+		this.x = x;
+	}
+	
 	@Override
 	public double getFunctionA() {
 		return Math.pow(x,x);
