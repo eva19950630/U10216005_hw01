@@ -30,7 +30,7 @@ public class TestFunctions {
 
 }
 
-abstract class Functions {
+class Functions {
 
 	protected int x;
 	
@@ -54,14 +54,6 @@ abstract class Functions {
 		return "f(x) = " + getX();
 	}
 	
-	public abstract double getFunctionA();
-	public abstract double getFunctionB();
-	public abstract double getFunctionC();
-	public abstract double getFunctionD();
-	public abstract double getFunctionE();
-	public abstract double getFunctionF();
-	public abstract double getFunctionG();
-	
 }
 
 // FunctionA
@@ -75,7 +67,7 @@ class FunctionA extends Functions {
 	}
 	
 	public double getFunctionA() {
-		return Math.pow(x,x);
+		return Math.pow(x,2);
 	}
 	
 	public void setFunctionA(int x) {
@@ -83,7 +75,7 @@ class FunctionA extends Functions {
 	}
 	
 	public String toString() {
-		return "a. f(x) = " + super.getX();
+		return "a. f(x) = " + getFunctionA();
 	}
 	
 }
@@ -107,7 +99,7 @@ class FunctionB extends Functions {
 	}
 	
 	public String toString() {
-		return "b. f(x) = " + super.getX();
+		return "b. f(x) = " + getFunctionB();
 	}
 	
 }
@@ -131,7 +123,7 @@ class FunctionC extends Functions {
 	}
 	
 	public String toString() {
-		return "c. f(x) = " + super.getX();
+		return "c. f(x) = " + getFunctionC();
 	}
 	
 }
@@ -155,7 +147,7 @@ class FunctionD extends Functions {
 	}
 	
 	public String toString() {
-		return "d. f(x) = " + super.getX();
+		return "d. f(x) = " + getFunctionD();
 	}
 	
 }
@@ -179,7 +171,7 @@ class FunctionE extends Functions {
 	}
 	
 	public String toString() {
-		return "e. f(x) = " + super.getX();
+		return "e. f(x) = " + getFunctionE();
 	}
 	
 }
@@ -203,7 +195,7 @@ class FunctionF extends Functions {
 	}
 	
 	public String toString() {
-		return "f. f(x) = " + super.getX();
+		return "f. f(x) = " + getFunctionF();
 	}
 	
 }
@@ -219,7 +211,7 @@ class FunctionG extends Functions {
 	}
 	
 	public double getFunctionG() {
-		return Math.log(x) + Math.pow(x,x);
+		return Math.log(x) + Math.pow(x,2);
 	}
 	
 	public void setFunctionG(int x) {
@@ -227,7 +219,7 @@ class FunctionG extends Functions {
 	}
 	
 	public String toString() {
-		return "g. f(x) = " + super.getX();
+		return "g. f(x) = " + getFunctionG();
 	}
 	
 }
