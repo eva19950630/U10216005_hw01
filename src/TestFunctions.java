@@ -8,7 +8,7 @@ public class TestFunctions {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter x: ");
-		int x = input.nextInt();
+		double x = input.nextDouble();
 		
 		Functions func1 = new FunctionA(x);
 		Functions func2 = new FunctionB(x);
@@ -32,20 +32,20 @@ public class TestFunctions {
 
 class Functions {
 
-	protected int x;
+	protected double x;
 	
 	protected Functions() {
 	}
 	
-	protected Functions(int x) {
+	protected Functions(double x) {
 		this.x = x;
 	}
 	
-	public int getX() {
+	public double getX() {
 		return x;
 	}
 	
-	public void setX(int x) {
+	public void setX(double x) {
 		this.x = x;
 	}
 
@@ -62,7 +62,7 @@ class FunctionA extends Functions {
 	public FunctionA() {
 	}
 	
-	public FunctionA(int x) {
+	public FunctionA(double x) {
 		this.x = x;
 	}
 	
@@ -70,7 +70,7 @@ class FunctionA extends Functions {
 		return Math.pow(x,2);
 	}
 	
-	public void setFunctionA(int x) {
+	public void setFunctionA(double x) {
 		this.x = x;
 	}
 	
@@ -86,7 +86,7 @@ class FunctionB extends Functions {
 	public FunctionB() {
 	}
 	
-	public FunctionB(int x) {
+	public FunctionB(double x) {
 		this.x = x;
 	}
 	
@@ -94,7 +94,7 @@ class FunctionB extends Functions {
 		return Math.sin(x);
 	}
 	
-	public void setFunctionB(int x) {
+	public void setFunctionB(double x) {
 		this.x = x;
 	}
 	
@@ -110,7 +110,7 @@ class FunctionC extends Functions {
 	public FunctionC() {
 	}
 	
-	public FunctionC(int x) {
+	public FunctionC(double x) {
 		this.x = x;
 	}
 	
@@ -118,7 +118,7 @@ class FunctionC extends Functions {
 		return Math.cos(x);
 	}
 	
-	public void setFunctionC(int x) {
+	public void setFunctionC(double x) {
 		this.x = x;
 	}
 	
@@ -134,7 +134,7 @@ class FunctionD extends Functions {
 	public FunctionD() {
 	}
 	
-	public FunctionD(int x) {
+	public FunctionD(double x) {
 		this.x = x;
 	}
 	
@@ -142,7 +142,7 @@ class FunctionD extends Functions {
 		return Math.tan(x);
 	}
 	
-	public void setFunctionD(int x) {
+	public void setFunctionD(double x) {
 		this.x = x;
 	}
 	
@@ -158,7 +158,7 @@ class FunctionE extends Functions {
 	public FunctionE() {
 	}
 	
-	public FunctionE(int x) {
+	public FunctionE(double x) {
 		this.x = x;
 	}
 	
@@ -166,7 +166,7 @@ class FunctionE extends Functions {
 		return Math.cos(x) + 5 * Math.sin(x);
 	}
 	
-	public void setFunctionE(int x) {
+	public void setFunctionE(double x) {
 		this.x = x;
 	}
 	
@@ -182,7 +182,7 @@ class FunctionF extends Functions {
 	public FunctionF() {
 	}
 	
-	public FunctionF(int x) {
+	public FunctionF(double x) {
 		this.x = x;
 	}
 	
@@ -190,7 +190,7 @@ class FunctionF extends Functions {
 		return 5 * Math.cos(x) + Math.sin(x);
 	}
 	
-	public void setFunctionF(int x) {
+	public void setFunctionF(double x) {
 		this.x = x;
 	}
 	
@@ -206,7 +206,7 @@ class FunctionG extends Functions {
 	public FunctionG() {
 	}
 	
-	public FunctionG(int x) {
+	public FunctionG(double x) {
 		this.x = x;
 	}
 	
@@ -214,7 +214,7 @@ class FunctionG extends Functions {
 		return Math.log(x) + Math.pow(x,2);
 	}
 	
-	public void setFunctionG(int x) {
+	public void setFunctionG(double x) {
 		this.x = x;
 	}
 	
