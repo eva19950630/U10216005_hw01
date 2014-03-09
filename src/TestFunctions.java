@@ -7,7 +7,7 @@ public class TestFunctions {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Enter x: ");
+		System.out.print("Enter x: ");
 		int x = input.nextInt();
 		
 		Functions func1 = new FunctionExample(x);
@@ -39,7 +39,7 @@ abstract class Functions {
 
 	@Override
 	public String toString() {
-		return "f(x) = " + x;
+		return "f(x) = " + getX();
 	}
 	
 	public abstract double getFunctionA();
