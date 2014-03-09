@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class TestFunctions {
 
+	/**Main method*/
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
@@ -30,6 +31,7 @@ public class TestFunctions {
 
 }
 
+// Functions Class (parent class)
 class Functions {
 
 	protected double x;
@@ -56,7 +58,7 @@ class Functions {
 	
 }
 
-// FunctionA
+// FunctionA Class (subclass1)
 class FunctionA extends Functions {
 
 	public FunctionA() {
@@ -80,7 +82,7 @@ class FunctionA extends Functions {
 	
 }
 
-// FunctionB
+// FunctionB Class (subclass2)
 class FunctionB extends Functions {
 
 	public FunctionB() {
@@ -104,7 +106,7 @@ class FunctionB extends Functions {
 	
 }
 
-// FunctionC
+// FunctionC Class (subclass3)
 class FunctionC extends Functions {
 
 	public FunctionC() {
@@ -128,7 +130,7 @@ class FunctionC extends Functions {
 	
 }
 
-// FunctionD
+// FunctionD Class (subclass4)
 class FunctionD extends Functions {
 
 	public FunctionD() {
@@ -152,7 +154,7 @@ class FunctionD extends Functions {
 	
 }
 
-// FunctionE
+// FunctionE Class (subclass5)
 class FunctionE extends Functions {
 
 	public FunctionE() {
@@ -176,7 +178,7 @@ class FunctionE extends Functions {
 	
 }
 
-// FunctionF
+// FunctionF Class (subclass6)
 class FunctionF extends Functions {
 
 	public FunctionF() {
@@ -200,7 +202,7 @@ class FunctionF extends Functions {
 	
 }
 
-// FunctionG
+// FunctionG Class (subclass7)
 class FunctionG extends Functions {
 
 	public FunctionG() {
